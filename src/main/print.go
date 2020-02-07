@@ -78,4 +78,7 @@ func main() {
 
 	//数组
 	arrayDemo()
+
+	//冒泡排序
+	bubbleSort()
 }

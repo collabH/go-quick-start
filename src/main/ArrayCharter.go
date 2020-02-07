@@ -43,3 +43,18 @@ func arrayDemo() {
 		{2, 2, 2}}
 	fmt.Print(len(arr7), len(arr7[0]), arr7)
 }
+
+func bubbleSort() {
+	arr := [5]int{5, 3, 1, 7, 8}
+	var len = len(arr)
+	for i := 0; i < len; i++ {
+		for j := i + 1; j < len; j++ {
+			if arr[i] < arr[j] {
+				temp := arr[i]
+				arr[i] = arr[j]
+				arr[j] = temp
+			}
+		}
+	}
+	fmt.Println(arr)
+}
